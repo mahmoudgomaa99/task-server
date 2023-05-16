@@ -5,9 +5,9 @@ import HttpError from "../models/Http-Error";
 const prisma = new PrismaClient();
 
 const getAllTodos = async (req: any, res: any, next: any) => {
-  try {
+  try {    
     const todos = await prisma.tODOS.findMany({
-      where: { userId: req.params.userId },
+      where: { userId: req.query.userId },
     });
     res.status(200).json({ message: "success", data: todos });
   } catch (error: any) {

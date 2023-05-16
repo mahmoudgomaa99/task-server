@@ -62,7 +62,7 @@ var getAllTodos = function (req, res, next) { return __awaiter(void 0, void 0, v
             case 0:
                 _a.trys.push([0, 2, , 3]);
                 return [4 /*yield*/, prisma.tODOS.findMany({
-                        where: { userId: req.params.userId },
+                        where: { userId: req.query.userId },
                     })];
             case 1:
                 todos = _a.sent();
