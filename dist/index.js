@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-require("dotenv/config");
+// import "dotenv/config";
 var express_1 = __importDefault(require("express"));
 var Users_1 = __importDefault(require("./routes/Users"));
 var checkToken_1 = __importDefault(require("./middlewares/checkToken"));
