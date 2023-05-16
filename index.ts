@@ -1,4 +1,4 @@
-// import "dotenv/config";
+import "dotenv/config";
 import express from "express";
 import UserRouter from "./routes/Users";
 import checkToken from "./middlewares/checkToken";
